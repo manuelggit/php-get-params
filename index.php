@@ -15,8 +15,19 @@ altrimenti stampare una stringa rossa. -->
       $ok = false;
     }
 
-
     ?>
+
+    <style>
+
+      .green {
+        color: green;
+      }
+
+      .red {
+        color: red;
+      }
+
+    </style>
 
   </head>
   <body>
@@ -24,9 +35,9 @@ altrimenti stampare una stringa rossa. -->
     <?php
 
       if($ok) {
-        ?><h2>password corretta</h2><?php
+        ?><h2 class="green">password corretta</h2><?php
       } else {
-        ?><h2>password sbagliata</h2><?php
+        ?><h2 class="red">password sbagliata</h2><?php
       }
 
     ?>
